@@ -1,0 +1,200 @@
+@import 'settings';
+@import 'foundation';
+
+// @include foundation-everything;
+
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-responsive-embed;
+// @include fougundation-media-object;
+@include foundation-xy-grid-classes;
+@include foundation-flex-classes;
+
+$burgandy: #82204A;
+
+.burgandy{
+  color: $burgandy;
+}
+
+//Header
+header{
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.menuButton{
+  display: flex;
+  width: 38.43px;
+  flex: 2 0 auto;
+  justify-content: center;
+  // align-self: flex-start;
+}
+
+//SOCIAL MEDIA
+.socialMedia{
+  width: 89.74px;
+  // flex: 1 0 auto;
+  // margin-left: auto;
+}
+
+.socialMedia ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0;
+  margin:0;
+}
+
+.socialMedia ul li:first-child{
+  display: none;
+}
+
+.socialMedia ul li{
+  display: inline-block;
+}
+
+#instagram{
+  width: 19.7px;
+  height: auto;
+}
+
+#twitter{
+  width: 23.8px;
+  height: 19.37px;
+}
+
+#dribbble{
+  width: 20.04px;
+  height: 20.04px;
+}
+
+
+.heading2 {
+  font-size: 29px;
+  line-height: 39px;
+  font-weight: 100;
+  margin:0;
+}
+
+.subhead{
+  font-size: 1rem;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-family: $body-font-family;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.hero {
+  background: url('../img/hero.jpg') no-repeat;
+  background-size: cover;
+}
+
+//PROJECT CSS
+
+.cardWrapper, .card {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cardWrapper {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+//PAGINATION
+
+.pagination {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  /* margin: 44vh 0; */
+}
+
+.pagination-items {
+  list-style: none;
+}
+
+.pagination-items a {
+  width: 40px;
+  height: 19px;
+  display: block;
+  margin: 0;
+}
+
+.pagination-items a li {
+  width: 40px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  display: block;
+  top: 0;
+  position: relative;
+}
+
+.pagination-items a.active>li {
+  width: 65px;
+  height: 5px;
+  background: #fff;
+  margin-left: -10px;
+}
+
+
+.card {
+  display: inline-block;
+  white-space: normal;
+  margin: 0;
+  padding: 324px 0 0 0;
+  color: #fff;
+}
+
+.card h1{
+  text-shadow: 0 12 12 #000000;
+  line-height: 86px;
+}
+
+.project-type{
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 13.5px;
+  margin-bottom: 43px;
+}
+
+.project-type::after{
+  display: block;
+  content: " ";
+  width: 46px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card1 {
+  background-image: url('../img/project1.png');
+  background-size: cover;
+}
+
+.card2 {
+  background-image: url('../img/project2.png');
+}
+
+.footer {
+  height: 260px;
+  background-color: #82204A;
+}
+
