@@ -60,8 +60,8 @@ typings/
 # next.js build output
 .next
 
-#image directory
-img/
+# working images directory
+img-working/
 
 # build directory
 dist/
